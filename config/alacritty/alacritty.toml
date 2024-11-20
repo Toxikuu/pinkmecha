@@ -3,21 +3,21 @@ normal = { family = "Iosevka Nerd Font" }
 size = 10
 
 [colors.primary]
-background = "#000012"
-foreground = "#7196ff"
-dim_foreground = "#6ea4cb"
-bright_foreground = "#89c6f3"
+background = "#2e3440"
+foreground = "#e8e3e8"
+dim_foreground = "#d8d3e8"
+bright_foreground = "#f8e3f8"
 
 [colors.cursor]
 text = "#000000"
-cursor = "#ffffff"
+cursor = "#e8e3e8"
 
 [colors.search.matches]
 foreground = "#373737"
-background = "#ffffff"
+background = "#e8e3e8"
 
 [colors.search.focused_match]
-foreground = "#ffffff"
+foreground = "#e8e3e8"
 background = "#82c0ec"
 
 [colors.footer_bar]
@@ -33,17 +33,17 @@ background = "#ffffff"
 # background = "#f9f9f9"
 
 [colors.selection]
-text = "#ffffff"
+text = "#e8e3e8"
 background = "#82c0ec"
 
 [colors.normal]
-black = "#2b3261"
-red = "#f16368"
-green = "#7df1a8"
+black = "#535c6e"
+red = "#e85397"
+green = "#1a1d1e"
 yellow = "#f98acf"
-blue = "#8071ee"
-magenta = "#bd81ec"
-cyan = "#438dff"
+blue = "#9f89be"
+magenta = "#906da1"
+cyan = "#8a9ad5"
 white = "#ffffff"
 
 # [colors.bright]
