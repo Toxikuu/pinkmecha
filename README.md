@@ -1,10 +1,10 @@
-# Nightdrive
+# Pinkmecha
 
 ## Info
-My darker LFS dots.
+Another set of LFS dots. This one is muted pink + lavender-grey.
 
 ## Installation
-I use my package manager to install this. If you wanna use these, I trust you can figure it out. I'm too lazy to write a proper install script lol.
+You can figure it out I trust.
 
 ## Credits
 I stole and tweaked a bunch of catppuccin config files.
