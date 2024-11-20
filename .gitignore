@@ -2,3 +2,9 @@ config/vesktop/Crashpad
 config/vesktop/sessionData
 config/vesktop/Singleton*
 config/vesktop/state.json
+
+config/kitty
+config/glib-*
+config/pulse
+config/cava
+config/Olympus
