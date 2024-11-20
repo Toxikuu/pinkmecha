@@ -5,11 +5,11 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 # Colors
-set $red       #7df1a8
-set $main      #7df1a8
-set $secondary #7196ff
-set $base      #7196ff
-set $text      #7df1a8
+set $red       #f98acf
+set $main      #f98acf
+set $secondary #4a4a5b
+set $base      #4a4a5b
+set $text      #f98acf
 
 # target                 title       bg     text   indicator   border
 client.focused           $red        $base  $text  $main       $main
@@ -50,6 +50,9 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 # Media Controls
+bindsym $Mod+comma           exec --no-startup-id ~/.config/i3/mpv.sh b
+bindsym $Mod+period          exec --no-startup-id ~/.config/i3/mpv.sh f
+
 bindsym $Mod+k               exec --no-startup-id playerctl -p mpv play-pause
 bindsym $Mod+j               exec --no-startup-id playerctl -p mpv previous
 bindsym $Mod+l               exec --no-startup-id playerctl -p mpv next
@@ -63,7 +66,7 @@ floating_modifier $Mod
 
 # Application Hotkeys
 bindsym $Mod+Return        exec alacritty
-bindsym $Mod+Shift+f       exec floorp.sh --ProfileManager
+bindsym $Mod+Shift+f       exec /code/fpm/fpm.sh
 bindsym $Mod+Shift+v       exec vesktop.sh
 bindsym $Mod+Shift+m       exec "alacritty --class toxmus -e /code/tm3/run.sh"
 bindsym $Mod+Control+m     exec "alacritty --class toxmus -e /code/tm3/queue.sh" 
@@ -180,6 +183,7 @@ bindsym $Mod+Shift+F10   move container to workspace $ws20
 for_window [class="vesktop"]              move container to workspace $ws6
 for_window [class="Spotify"]              move container to workspace $ws6
 for_window [class="steam"]                move container to workspace $ws4
+for_window [class="steamwebhelper"]       move container to workspace $ws4
 for_window [class="EverestSplash-linux"]  move container to workspace $ws7
 for_window [class="Celeste"]              move container to workspace $ws7
 for_window [class="EtG.x86_64"]           move container to workspace $ws7
@@ -246,9 +250,9 @@ exec --no-startup-id xrandr --output DP-2   --mode 1920x1080 --rate 300.18
 exec --no-startup-id xrandr --output HDMI-0 --mode 1920x1080 --rate 74.97
 
 # Wallpapers
-# exec --no-startup-id feh --bg-scale ~/wallpapers/paperplane.png
-exec --no-startup-id xwinwrap -g 1920x1080+0+0    -ni -s -nf -b -un -ov -fdt -argb -- mpv --mute=yes --no-audio --no-osc --no-osd-bar --quiet --screen=0 -wid WID --loop ~/wallpapers/nightdrive.mp4
-exec --no-startup-id xwinwrap -g 1920x1080+1920+0 -ni -s -nf -b -un -ov -fdt -argb -- mpv --mute=yes --no-audio --no-osc --no-osd-bar --quiet --screen=0 -wid WID --loop ~/wallpapers/nightdrive.mp4
+exec --no-startup-id feh --bg-scale /rice/dots/pinkmecha/wallpapers/pink-mecha.png
+# exec --no-startup-id xwinwrap -g 1920x1080+0+0    -ni -s -nf -b -un -ov -fdt -argb -- mpv --mute=yes --no-audio --no-osc --no-osd-bar --quiet --screen=0 -wid WID --loop ~/wallpapers/nightdrive.mp4
+# exec --no-startup-id xwinwrap -g 1920x1080+1920+0 -ni -s -nf -b -un -ov -fdt -argb -- mpv --mute=yes --no-audio --no-osc --no-osd-bar --quiet --screen=0 -wid WID --loop ~/wallpapers/nightdrive.mp4
 
 # Exec always
 exec_always --no-startup-id autotiling.sh
